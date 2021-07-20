@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,45 +8,52 @@
     <title>Contato</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
     <ul id="menu">
         <li>
-         <a href="index.html">Home</a>   
+            <a href="index.html">Home</a>
         </li>
         <li>
-            <a href="contato.html">Contato</a>   
-           </li>
+            <a href="contato.html">Contato</a>
+        </li>
     </ul>
-    <h1 class="center">Para Entrar Em Contato Comigo</h1> 
+    <h1 class="center">Para Entrar Em Contato Comigo</h1>
 
-    <div class="container ml-50 mb-50">    <form>
-        <label for="nome">Nome:</label> <br>
-        <input type="text" id="nome">
+    <div class="container ml-50 mb-50">
+        <form>
+            <label for="nome">Nome:</label> <br>
+            <input type="text" id="nome" onkeyup="validaNome()">
+            <div id='txtNome'>  </div>
             <br>
-        <label for="email">Email::</label> <br>
-        <input type="email" id="email">
-        <br>
-        <label for="assunto">Assunto:</label> <br>
-        <textarea name="assunto" id="" cols="60" rows="7"></textarea>
-    </form>
+            <label for="email">Email::</label> <br>
+            <input type="email" id="email" onkeyup="validaEmail()">
+            <div id='txtEmail'  >  </div>
+            <br>
+            <label for="assunto">Assunto:</label> <br>
+            <textarea name="assunto" id="assunto" cols="60" rows="7"></textarea>
+            <button > Enviar</button>
+        </form>
 
-    <button>Enviar</button>
-</div>
-
-<hr>
+        
+        
+       
+    </div>
+    
+    <hr>
     <footer>
         <div class="container ">
-            
+
             <a href="https://www.linkedin.com/in/joelrfjunior/" target="blanck">
                 <img class="tm-social p-30" src="assets/img/linkedin.png" alt="logo do linkedin">
             </a>
-            
-           
-           <a href="https://github.com/JoelRFJunior" target="blanck">
-            <img class="tm-social p-30" src="assets/img/github.png" alt="logo do github">
-           </a>
-          
+
+
+            <a href="https://github.com/JoelRFJunior" target="blanck">
+                <img class="tm-social p-30" src="assets/img/github.png" alt="logo do github">
+            </a>
+
         </div>
 
         <p class="center">
@@ -54,5 +62,7 @@
 
     </footer>
 
+    <script src="assets/javascript/script.js"></script>
 </body>
+
 </html>
